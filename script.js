@@ -59,7 +59,7 @@ const displayIns = (meals) => {
 
 const RandomRecipe_append = async (load) => {
     let frag = document.createDocumentFragment();
-    for(let i = 0;i < 10;i++)
+    for(let i = 0;i < 8;i++)
         {
             let Ran_data = await fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
             let Ran_Response = await Ran_data.json();
@@ -168,4 +168,5 @@ searchBtn.addEventListener('click', (e) => {
     let searchData = searchBar.value.trim();
     RecipeData(searchData);
 })
+
 BeforeRanDis();
