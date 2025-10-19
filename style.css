@@ -1,0 +1,210 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;  
+}
+html, body {
+    background-color: #fbe9d7;
+}
+.head {
+    height: 10vh;
+    width: 100%;
+    background-color: #ffcad4;
+}
+@media (max-width : 568px) {
+    .head {
+        height: 15vh;
+    }
+}
+.navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.name h1 {
+    background-image: linear-gradient(to right, #ef709b, #fa9372, #f492f0, #ff5858);
+    background-clip: text;
+    color: transparent;
+    animation-name: tran;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in;
+    background-size: 200% auto;
+    font-weight: bold;
+}
+@keyframes tran {
+    0% {
+        background-position: 200% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.name img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#src {
+    height: 25px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+#src:focus {
+    transform: scale(1.01);
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+.top h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #c53030;
+    display: none;
+}
+.cont1 {
+    border: 1px solid #ef709b;
+    height: 300px;
+    width: 250px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1rem;
+}
+.cont1 img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.subBtn {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 5px;
+}
+.lbtn {
+    height: 30px;
+    width: 110px;
+    background-color: #ff5858;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.lbtn:hover{
+    transform: scale(1.05);
+}
+.saruku {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap: 70px;
+}
+.subhead {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    text-align: center;
+}
+.disIng {
+    max-height: 70vh;
+    width: 20vw;
+    background-color: salmon;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #fa9372;
+    display: none;
+    overflow-y:auto;
+    scrollbar-color: black;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.disIng h1 {
+    color: #c53030;
+}
+.disIng i {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.disIns {
+    max-height: 50vh;
+    width: 50vw;
+    background-color: salmon;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #fa9372;
+    display: none;
+    overflow-y:auto;
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+.disIns p {
+    padding-right: 5px;
+    text-align: justify;
+}
+.videobtn {
+    text-decoration: none;
+    width: 180px;
+    margin: 5px auto;
+}
+.videobtn a {
+    text-decoration: none;
+    color: black;
+    
+}
